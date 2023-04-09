@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css_media/media.css">	
+        <link rel="shortcut icon" href="assets/favicon/unnamed (1).ico" type="image/x-icon">	
+        <title>MP3 Player</title>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <section class="search-wrapper">
+                <div class="inp-wrapper">
+                    <input data-input placeholder="Name of the song..." type="text">
+                    <button data-btn-search><img src="assets/images/btn-search.svg" alt="search-btn"></button>
+                </div>
+                <div class="response-songs"></div>
+            </section>
+            <section class="player-wrapper">
+                <div class="list-songs"></div>
+                <div class="mp3">
+                    <div class="album-cover">
+                        <img data-img-mp3 src="http://e-cdn-images.dzcdn.net/images/artist/7a66231b65ed2a4040991bf5730c4826/500x500-000000-80-0-0.jpg">
+                    </div>
+                    <div value="0" class="player-tools">
+                        <div class="name-mp3">
+                            <small data-mp3-song>Duality</small>
+                            <strong data-mp3-artist>Slipknot</strong>
+                        </div>
+                        <div class="play-btns">
+                            <div class="prev"><img data-prev src="assets/images/chevrons-left.svg" width="60" height="60"></div>
+                            <div class="pause"><img data-pause src="assets/images/play.png" width="60" height="60"></div>
+                            <div class="next"><img data-next src="assets/images/chevrons-right.svg" width="60" height="60"></div>
+                        </div>
+                        <div class="song">
+                            <video class="video-list"></video>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script src="java_script/core.js"></script>
+    </body>
+</html>
